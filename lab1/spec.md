@@ -1,10 +1,10 @@
 # EECS 251B Lab 1 - Chipyard: An Agile RISC-V SoC Design Framework
 
 <p align="center">
-Profs: Bora Nikolic, Vladimir Stojanovic, Sophia Shao
+Profs: Vladimir Stojanovic
 </p>
 <p align="center">
-TA: Erik Anderson
+TA: Sunjin Choi, Paul Kwon
 </p>
 <p align="center">
 Department of Electrical Engineering and Computer Science
