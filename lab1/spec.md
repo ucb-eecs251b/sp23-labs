@@ -158,21 +158,21 @@ There are many files that are generated in this folder that relate to FIRRTL com
 final Verilog output files. All of the file names are pre-fixed with the name of the config used. For example, in the 
 `generated-src/chipyard.TestHarness.RocketConfig` directory, many files are prefixed with `chipyard.TestHarness.Rocketconfig`.
 
-The file `top.mems.conf` describes the parameters of the memories in your design and `top.mems.v` shows the actual Verilog
+The file `chipyard.TestHarness.Rocketconfig.top.mems.conf` describes the parameters of the memories in your design and `chipyard.TestHarness.Rocketconfig.top.mems.v` shows the actual Verilog
 instantiations of the individual SRAM blocks used (the names of the memory blocks will match the Verilog module names).
 
 
 ***Q2: What is the breakdown of SRAM blocks for each of the memories in the design? This can be found by looking at the files described above.***
 
-***Q3: Now, take a look at the `top.anno.json` file This contains a listing of all the targets (i.e. instances) that need to be
+***Q3: Now, take a look at the `chipyard.TestHarness.Rocketconfig.top.anno.json` file This contains a listing of all the targets (i.e. instances) that need to be
 transformed in specific ways by FIRRTL in the Chisel to Verilog elaboration. In your report, show one of the SRAM annotations
 and describe the correspondence with what was generated from Q2.***
 
-`generated-src/` also includes your elaborated Verilog in top.v, files related to your system's devoce tree, and even a `graphml`
+`vlsi/generated-src/` also includes your elaborated Verilog in top.v, files related to your system's devoce tree, and even a `graphml`
 file that visualizes the diplomacy graph of the different components in your system (can be viewed with an [online viewer](https://www.yworks.com/yed-live/).
 
-Finally, Hammer is executed using the information from the `top.mems.conf` file to gather all of the collateral needed for physical design
-with SRAMs. The outputs of Hammer are in the `build/chipyard.TestHarness.RocketConfig-ChipTop` directory. Note that the first time Hammer
+Finally, Hammer is executed using the information from the `chipyard.TestHarness.Rocketconfig.top.mems.conf` file to gather all of the collateral needed for physical design
+with SRAMs. The outputs of Hammer are in the `vlsi/build/chipyard.TestHarness.RocketConfig-ChipTop` directory. Note that the first time Hammer
 invokes the ASAP7 PDK, it extracts the PDK tarball and hacks it into the `tech-asap7-cache/` directory, so it may take a few minutes.
 
 In this build directory, take a look at the `sram-generator-output.json` file. You will find a structure under the key `vlsi.technology.extra_libraries`.
