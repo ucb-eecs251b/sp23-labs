@@ -73,13 +73,15 @@ cd chipyard
 ./scripts/init-vlsi.sh asap7
 ```
 
-
-Note: Regarding git-related issues in `eda-*` servers, you may want to run
+Note 1: Regarding git-related issues in `eda-*` servers, you may want to run
 ```
 git config --global url.https://github.com/.insteadOf git://github.com/
 git config --global protocol.file.allow always
 ```
 before running the scripts
+
+Note 2: hammer-synopsys-plugins and hammer-mentor-plugins are private repos. ***PLEASE DO NOT PUBLISH THEM PUBLICLY***
+
 
 You may have noticed while initializing your Chipyard repo that there are many submodules. Chipyard is built
 to allow the designer to generate complex configurations from different projects including the in-order Rocket
@@ -96,7 +98,7 @@ configure and read from the block. Again, there is far too much to discuss fully
 together a system very quickly using the infrastructure of Chipyard.
 
 
-Before continuiing, this environment setup script must be run from the `chipyard` directory every time you use
+Before continuing, this environment setup script must be run from the `chipyard` directory every time you use
 Chipyard in a new terminal session.
 
 ```
