@@ -73,12 +73,13 @@ cd chipyard
 ./scripts/init-vlsi.sh asap7
 ```
 
-(Regarding git-related issues in `eda-*` servers, you may want to run
+
+Note: Regarding git-related issues in `eda-*` servers, you may want to run
 ```
 git config --global url.https://github.com/.insteadOf git://github.com/
 git config --global protocol.file.allow always
 ```
-before running the scripts)
+before running the scripts
 
 You may have noticed while initializing your Chipyard repo that there are many submodules. Chipyard is built
 to allow the designer to generate complex configurations from different projects including the in-order Rocket
