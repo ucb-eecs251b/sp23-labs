@@ -1,7 +1,7 @@
 # EECS 251B Lab 1 - Chipyard: An Agile RISC-V SoC Design Framework
 
 <p align="center">
-Profs: Vladimir Stojanovic
+Prof: Vladimir Stojanovic
 </p>
 <p align="center">
 TA: Sunjin Choi, Paul Kwon
@@ -175,7 +175,7 @@ Finally, Hammer is executed using the information from the `chipyard.TestHarness
 with SRAMs. The outputs of Hammer are in the `vlsi/build/chipyard.TestHarness.RocketConfig-ChipTop` directory. Note that the first time Hammer
 invokes the ASAP7 PDK, it extracts the PDK tarball and hacks it into the `tech-asap7-cache/` directory, so it may take a few minutes.
 
-In this build directory, take a look at the `sram-generator-output.json` file. You will find a structure under the key `vlsi.technology.extra_libraries`.
+In this build directory `vlsi/build`, take a look at the `sram-generator-output.json` file. You will find a structure under the key `vlsi.technology.extra_libraries`.
 This structure is needed to provide all of the files needed for a physical design flow with IP blocks such as SRAM macros.
 
 ***Q4: Choose any library in the list of extra_libraries, and explore the files listed. In your lab report, concisely describe what
