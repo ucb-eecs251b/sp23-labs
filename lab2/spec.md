@@ -1,10 +1,10 @@
 # EECS 251B Lab 2 - SHA-3 Accelerator Design in Chisel  
 
 <p align="center">
-Profs: Bora Nikolic, Sophia Shao, Vladimir Stojanovic
+Profs: Vladimir Stojanovic
 </p>
 <p align="center">
-TA: Erik Anderson
+TA: Sunjin Choi, Paul Kwon
 </p>
 <p align="center">
 Department of Electrical Engineering and Computer Science
@@ -37,7 +37,7 @@ to clone the Chisel project for lab 2.
 
 ```
 cd /scratch/<your-username>
-git clone /home/ff/eecs251b/sp22-workspace/sp22-chisel-project-template
+git clone /home/ff/eecs251b/sp23-workspace/sp23-chisel-project-template
 ```
 
 Lab 1 should have already familiarized you with the sbt directory structure. If you need
@@ -258,7 +258,8 @@ You should only need to edit the following files in order to get all tests to pa
 
 ## Acknowledgements
 
-This lab is an updated version of SP17 CS250's lab 1. Many people have contributed to versions
+This lab is an updated version of SP17 CS250's lab 1. Thank you to Erik Anderson for rewriting the lab for EECS251B.
+Many people have contributed to versions
 of this lab over the years. Contributors include Colin Schmidt, James Martin,
 Yunsup Lee, Christopher Yarp, Brian Zimmer, Rimas Avizienis, Ben Keller, Krste Asanovic,
 Christopher Batten, John Lazzaro, and John Wawrzynek.
