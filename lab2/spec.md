@@ -258,7 +258,7 @@ You should only need to edit the following files in order to get all tests to pa
 
 ## Acknowledgements
 
-This lab is an updated version of SP17 CS250's lab 1. Thank you to Erik Anderson for rewriting the lab for EECS251B.
+Thank you to Erik Anderson for rewriting the lab for EECS251B. This lab is an updated version of SP17 CS250's lab 1. 
 Many people have contributed to versions
 of this lab over the years. Contributors include Colin Schmidt, James Martin,
 Yunsup Lee, Christopher Yarp, Brian Zimmer, Rimas Avizienis, Ben Keller, Krste Asanovic,
