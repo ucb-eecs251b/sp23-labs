@@ -1,7 +1,7 @@
 # EECS 251B Lab 2 - SHA-3 Accelerator Design in Chisel  
 
 <p align="center">
-Profs: Vladimir Stojanovic
+Prof: Vladimir Stojanovic
 </p>
 <p align="center">
 TA: Sunjin Choi, Paul Kwon
