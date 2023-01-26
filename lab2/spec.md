@@ -190,9 +190,8 @@ correct absorbed state.
 
 The final SHA-3 accelerator block (essentially just connects the combinational datapath with the 
 control FSM) has been given to you and is located in `src/main/scala/sha3/Sha3Accel.scala`.
-The implemented state machine would cycle through the wait, hash and write states. It does
-not need to process multiple messages simultaneously, so you can assume that the accelerator
-would stall any messages at the compute phase via ready-valid protocol.
+The implemented state machine would cycle through wait, hash and write states, and you can assume that it
+would stall any messages at the compute phases via ready-valid protocol.
 You can also find the final test in `src/test/scala/sha3/Sha3AccelSpec.scala`. 
 Obviously, you will not want to run this test until you have all of your blocks 
 implemented and hooked up properly. This final test is replicated in a step-by-step
