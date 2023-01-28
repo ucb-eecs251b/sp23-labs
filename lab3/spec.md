@@ -1,10 +1,10 @@
 # EECS 251B Lab 3 - GCD: VLSI's Hello World  
 
 <p align="center">
-Profs: Bora Nikolic, Sophia Shao, Vladimir Stojanovic
+Prof: Vladimir Stojanovic
 </p>
 <p align="center">
-TA: Erik Anderson
+TA: Sunjin Choi, Paul Kwon
 </p>
 <p align="center">
 Department of Electrical Engineering and Computer Science
