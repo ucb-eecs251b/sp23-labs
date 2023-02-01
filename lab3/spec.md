@@ -30,7 +30,7 @@ flow.
 
 Figure 1 shows an overview of a partial VLSI toolflow. In this lab, you will
 use Synopsys VCS to simulate and debug your RTL design. We will be using 
-Cadence tools to run through the actual VLSI flow. You will use Cadnec Genus
+Cadence tools to run through the actual VLSI flow. You will use Cadence Genus
 to synthesize the design. Synthesis is the process of transforming an RTL model
 into a gate-level netlist. After obtaining a working gate-level netlist, you 
 will use Cadence Innovus to place and route the design. Placement is the process
@@ -79,7 +79,7 @@ cd chipyard/vlsi
 git pull
 ```
 
-As a reminder, please note that hammer-cadence-plugins, hammer-synopsys-plugins, and
+As a reminder, please note that hammer-synopsys-plugins, and
 hammer-mentor-plugins repos are private. ***DO NOT PUBLISH THESE PUBLICLY***.
 
 The `vlsi` folder now constains a new directory called `lab3`. Inside, you will see
@@ -137,7 +137,7 @@ any special licenses for running at such an advanced technology node. We have
 provided scripts that will automatically hack your design to scale it correctly
 at the end.
 
-The technology is extracted at `/home/ff/eecs251b/sp22-workspace/asap7`. There
+The technology is extracted at `/home/ff/eecs251b/sp23-workspace/asap7`. There
 are 4 key parts of this specific technology:
 
 1. PDK: `asap7PDK_r1p7`
@@ -169,7 +169,7 @@ characterizing the blocks in question. You will learn more about some of these f
 and the different modules used in lecture.
 
 Take a look at 
-`/home/ff/eecs251b/sp22-workspace/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef`
+`/home/ff/eecs251b/sp23-workspace/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef`
 This file is called the tech LEF and it specifies the physical properties of
 the technology itself. It specifies the layers of the deisgn and spacing design
 rules for each metal (as described in lecture, there are physical manufacturing
@@ -234,8 +234,8 @@ A list of default Hammer keys can be found in `hammer/src/hammer-vlsi/defaults.y
 and the inputs specific to this lab can be found in `lab3/gcd.yml`
 
 Here is a link to the 
-{Hammer documentation](https://hammer-vlsi.readthedocs.io/en/latest/index.html).
-if you want to know morea bout it.
+{Hammer documentation}(https://hammer-vlsi.readthedocs.io/en/latest/index.html).
+if you want to know more about it.
 
 As mentioned before, at the end of the day, Hammer emits Tcl to drive the tools, 
 the same as any other flow. You will examine the Tcl that Hammer emits to let
@@ -549,7 +549,7 @@ Calibre does LVS by taking the post-P&R Verilog netlist and layout and creates a
 Spice netlist from the former and extracts all the connectivity and transistors
 from the latter into a different netlist. It then applies algorithms to match
 each transistor and net between the two netlist. In a purely digital flow, LVS
-errors often come from emtal shorts or opens due to congestion, bad power
+errors often come from metal shorts or opens due to congestion, bad power
 grids, or other issues that can be solved by tweaking P&R. Often, it pays off
 to be LVS "clean" very early in the VLSI flow iteration cycle before tackling DRC.
 
