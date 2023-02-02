@@ -91,7 +91,7 @@ RTL:
 - `src/gcdGCDUnit_rtl.v` - RTL implementation of gcdGCDUnit
 - `src/gcdGCDUnitCtrl.v` - Control part of the RTL implementation
 - `src/gcdGCDUnitDpath.v` - Datapath part of the RTL implementation
-- `src/gcdTestHarness.v` - Test harness for the RTL model
+- `src/gcdTestHarness_rtl.v` - Test harness for the RTL model
 
 The block diagram is shown in Figure 2. We have provided you with a test harness
 that will drive the inputs and check the outputs of your design. Your module is 
@@ -194,7 +194,7 @@ the same unit structure, as they must be optimized for various design targets su
 power, performance and area. In the lecture, you will be guided through the design of
 standard cells in the ASAP7 technology. If you wish to learn more, here are some 
 papers on ASAP7 standard cells.
-[paper 1](https://ieeexplore.ieee.org/document/8203889) [paper 2] (https://ieeexplore.ieee.org/abstract/document/8203890)
+[paper 1](https://ieeexplore.ieee.org/document/8203889) [paper 2](https://ieeexplore.ieee.org/abstract/document/8203890)
 
 ***Q4. What are the unit standard cell dimensions? Answer for each LVT, RVT, SLVT and SRAM 
 (Hint: take a look at the asap7sc7p5t entry)***
@@ -227,7 +227,7 @@ A hammer call generally looks like this:
 hammer-vlsi <action> -e env.yml -p input.yml --obj_dir build
 ```
 
-`hammer-vlsi` is the Hammer driver program (`hammer-vlis` is the default ont, but
+`hammer-vlsi` is the Hammer driver program (`hammer-vlsi` is the default ont, but
 you can write a driver that extends the provided base class to insert custom steps
 into your flow-we will be using `example-vlsi`). `action` is a particular part of the
 flow that you want to run (e.g. synthesis/syn, place-and-route/par, drc, lvs, etc...).
@@ -244,7 +244,7 @@ A list of default Hammer keys can be found in `hammer/src/hammer-vlsi/defaults.y
 and the inputs specific to this lab can be found in `lab3/gcd.yml`
 
 Here is a link to the 
-[Hammer documentation](https://hammer-vlsi.readthedocs.io/en/latest/index.html).
+[Hammer documentation](https://hammer-vlsi.readthedocs.io/en/latest/index.html)
 if you want to know more about it.
 
 As mentioned before, at the end of the day, Hammer emits Tcl to drive the tools, 
@@ -445,7 +445,7 @@ cd build/lab3/par-rundir
 Figure 3 shows an example of the Innovus GUI with a routed design. Here you can
 visualize things like congestion, pin locations, and DRC violations. In the upper
 right corner, select the Physical View icon. Then in the right sidebar, select the
-Cell V checkboc, then under Layer deselect layers M8, M9, V7, and V8 (since those
+Cell V checkbox, then under Layer deselect layers M8, M9, V7, and V8 (since those
 are domination by power straps and are not used for routing). If you zoom in, you
 can see the locations of your standard cells and the routing. You can also see the
 power straps located on some of the middle routing layers. If you zoom in closer to
@@ -507,11 +507,11 @@ manufacturing.
 You must run DRC on your design to check if it meets the rule requirements
 of the technology you are working in. There are typically many rules that
 have to do with metal spacing, density, double-patterning, antenna, and much
-more. A design must be DRC "clean" (i.e. no violations or a few waved ones)
+more. A design must be DRC "clean" (i.e. no violations or a few waived ones)
 before the foundry will manufacture your chip. These rules are set by the 
 foundry to maximize manufacturing yield. For our ASAP7 PDK, you can find
 the design rule manual (DRM) at
-`/home/ff/eecs251b/sp22-workspace/asap7/asap7PDK_r1p7/docs/asap7_drm.pdf`.
+`/home/ff/eecs251b/sp23-workspace/asap7/asap7PDK_r1p7/docs/asap7_drm.pdf`.
 
 Run the following commands:
 
