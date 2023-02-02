@@ -180,14 +180,24 @@ here `/share/instsww/cadence/INNOVUS181/doc/lefdefref/lefdefref.pdf`):
 
 ***Q1: How many layers are specified in the ASAP7 technology?***
 
-***Q2: What are the unit standard cell dimensions? (hint: take a look at the
-SITE entry)***
-
 ***Q3: What is the preferred routing direction on metal layer 5?***
 
 ***Q4: On metal 8, if there are two wires that are 0.8 um wide and run
 parallel to each other for 5 um, what is the minimum spacing between the
 two wires?***
+
+
+Next, go to `/home/ff/eecs251b/sp23-workspace/asap7/asap7sc7p5t_27/LEF`. You 
+will find four LEF files, each corresponding to different flavors of ASAP7 transistors:
+SLVT, LVT, RVT and SRAM. The standard cells of each transistor flavor may or may not have
+the same unit structure, as they must be optimized for various design targets such as 
+power, performance and area. In the lecture, you will be guided through the design of
+standard cells in the ASAP7 technology. If you wish to learn more, here are some 
+papers on ASAP7 standard cells.
+[paper 1](https://ieeexplore.ieee.org/document/8203889) [paper 2] (https://ieeexplore.ieee.org/abstract/document/8203890)
+
+***Q2. What are the unit standard cell dimensions? Answer the question for each LVT, RVT, SLVT and SRAM 
+(Hint: take a look at the asap7sc7p5t entry)***
 
 This was just a quick intro into ASAP7 and looking at technologies in general.
 When running through the rest of the lab, think about which tools require
