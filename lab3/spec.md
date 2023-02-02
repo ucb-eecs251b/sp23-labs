@@ -244,7 +244,7 @@ A list of default Hammer keys can be found in `hammer/src/hammer-vlsi/defaults.y
 and the inputs specific to this lab can be found in `lab3/gcd.yml`
 
 Here is a link to the 
-[Hammer documentation](https://hammer-vlsi.readthedocs.io/en/latest/index.html)
+[Hammer documentation](https://hammer-vlsi.readthedocs.io/en/stable/index.html)
 if you want to know more about it.
 
 As mentioned before, at the end of the day, Hammer emits Tcl to drive the tools, 
