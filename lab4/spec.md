@@ -887,7 +887,8 @@ results. These are left for you to explore for your projects or future
 research.
 
 ## Acknowledgments
-This lab is a condensed and updated version of 2 labs written by Harrison Liew,
-Daniel grubb, Sean Huang, and Brian Zimmer. Additionally, we'd like to
+Thank you to Erik Anderson who updated the lab for EECS251B.
+This lab was originally written by Harrison Liew,
+Daniel Grubb, Sean Huang, and Brian Zimmer. Additionally, we'd like to
 recognize ECE 6332 - Introduction to VLSI Design (for the 21st Century) at UVA
 for the excellent ASAP7 layout reference.
