@@ -171,7 +171,7 @@ Manager window, as shown in Figure 2.
 ```
 cd lab4
 tcsh      # start C shell
-source ~eecs251b/sp22-workspace/asap7/asap7PDK_r1p7/cdslib/setup/setup_asap7.csh
+source ~eecs251b/sp23-workspace/asap7/asap7PDK_r1p7/cdslib/setup/setup_asap7.csh
 exit      # exit C shell
 virtuoso &
 ```
@@ -193,7 +193,7 @@ library by going to `File` > `New` > `Library`. Call it `asap7_std_cells`. Then
 select "Attach to an existing technology library" and choose `asap7_TechLib`.  
 
 Then in the CIW (small window), go to `File` > `Import` > `Stream` with Stream File as 
-`~eecs251b/sp22-workspace/asap7/asap7sc7p5t_27/GDS/asap7sc7p5t_27_R_201211.gds` 
+`~eecs251b/sp23-workspace/asap7/asap7sc7p5t_27/GDS/asap7sc7p5t_27_R_201211.gds` 
 and select the `asap7_std_cells` library. Attach it to `asap7_TechLib` and click 
 `Apply`. This will stream in the layouts for all the existing standard cells in ASAP7.
 
@@ -369,7 +369,7 @@ waveforms).***
 
 ****Q9: Compare your setup time result to the timing parameters for
 `DFFHQNx1_ASAP7_75t_R` in
-`~eecs251b/sp22-workspace/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SEQ_RVT_TT_nldm_201020.lib.gz`.
+`~eecs251b/sp23-workspace/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SEQ_RVT_TT_nldm_201020.lib.gz`.
 Copy the entire section of the lib (starting at "timing () {}") that
 corresponds to the setup time and try to guess why it is presented as a look-up
 table instead of a single value without consulting a LIB reference. Tip: you
@@ -466,7 +466,7 @@ First, navigate to `vlsi/asap7_lib`. Inside, there are a few TCL files and a
 Makefile. Let's go through them one-by-one to see how Liberate works in order
 to characterize our "custom" flip-flop. We will also then compare it against
 the LIB that comes from the PDK, which is located at
-`~eecs251b/sp22-workspace/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SEQ_RVT_TT_nldm_201020.lib.gz`.
+`~eecs251b/sp23-workspace/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SEQ_RVT_TT_nldm_201020.lib.gz`.
 
 The Makefile is very simple. You can see that `CELL_TYPE` is set to `DFF`,
 which passes `char_DFF.tcl` to the `liberate` command. This TCL file is set up
@@ -767,7 +767,7 @@ the window that appears, set the LEF filename to `custom_dff_R.lef` (or
 something else of your choosing). Select 5.8 as the LEF version, then hit OK.
 
 Now, open the LEF you just created alongside the LEF provided in the PDK at
-`~eecs251b/sp22-workspace/asap7/asap7sc7p5t_27/LEF/scaled/asap7sc7p5t_27_R_4x_201211.lef`.
+`~eecs251b/sp23-workspace/asap7/asap7sc7p5t_27/LEF/scaled/asap7sc7p5t_27_R_4x_201211.lef`.
 In the latter file, scroll down to the part that starts with 
 `MACRO DFFHQNx1_ASAP7_75t_R`. As you compare the two files, note that the LEFs
 provided in the PDK have been manually scaled up by 4x in order to get around
