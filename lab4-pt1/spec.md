@@ -68,7 +68,7 @@ cd vlsi
 ```
 
 ***Q1: Include the commands that you ran to get syn, par, and lvs
-to run in your lab report.***
+to run in your lab report. You may run `lab4-vlsi` instead of `example-vlsi` for this question***
 
 Before continuing, examine the `lab4-vlsi` file more closely. This file 
 contains a HammerDriver that extends the base HammerDriver class. This is how 
