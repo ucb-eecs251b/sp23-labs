@@ -390,6 +390,19 @@ DFFHQNx1_ASAP7_75t_R entry.***
 
 ## Conclusion
 
+
+This lab is part 1 of an introduction to custom design flow. What we've covered so far 
+is DRC, LVS and PEX, which are the most critical elements of today's EDA flow.
+At the end of every design flow, you will be running DRC to make sure your design meets the
+foundry's manufacturing rules, LVS to ensure the layout matches your schematic intent, and PEX to 
+verify circuit behaviors with extracted layout parasitics.
+
+However, this is not the end of custom design flow story. If you want to incorporate these cells into
+VLSI tools and generate larger-scale designs, you may need better abstractions
+for the cells. Part 2 of this lab will explore Cadence Abstract Generator (for LEF) and Cadence
+Liberate (for LIB), which generates layout and timing abstractions for custom cells.
+
+<!---
 This lab was meant to give a fairly comprehensive overview of the custom design
 flow. You now know how to generate all of the required collateral for the VLSI
 tools for both a standard cell and a bigger custom cell. You learned how to
@@ -402,6 +415,7 @@ explored in depth, such as power, leakage, electromigration, antenna, and more.
 We have also not taken into account process variation in the characterization
 results. These are left for you to explore for your projects or future
 research.
+--->
 
 ## Acknowledgments
 Thank you to Erik Anderson who updated the lab for EECS251B.
