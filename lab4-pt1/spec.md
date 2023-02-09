@@ -122,6 +122,7 @@ developed by Synopsys. You will often hear about HSPICE (Synopsys) and Spectre (
 If you are not familiar with HSPICE, here are resources you can refer to
 [HSPICE Tutorial](https://inst.eecs.berkeley.edu/~ee105/sp11/tutorials/HSPICE_Tutorial.pdf) [HSPICE Manual](https://cseweb.ucsd.edu/classes/wi10/cse241a/assign/hspice_sa.pdf) to 
 learn about the basic netlist syntax and simulation commands.
+
 We have supplied some HSPICE files in `vlsi/asap7_pex` that have the
 testbenches mostly setup for you already. The testbenches are
 `decoder_testbench.sp` and `extracted_decoder_testbench.sp`. For the
