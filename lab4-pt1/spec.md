@@ -278,11 +278,8 @@ general tutorial for basic layout editing.
     </br>
 </p>
 
-Figure 4 is a screenshot of what your copied DFF layout should look like.  A
-great resource for layout in ASAP7 can be found
-[here](http://venividiwiki.ee.virginia.edu/mediawiki/index.php/FinFET_ASAP7_CellLayout).
-This describes most of the important layers and provides a layout tutorial for a
-gate in ASAP7. If you are unfamiliar with transistor level layout, it would be
+Figure 4 is a screenshot of what your copied DFF layout should look like. 
+If you are unfamiliar with transistor level layout, it would be
 instructive for you to go through the DFF layout and correlate parts of it to
 the schematic. If you're unsure of where to start, you can use the top level
 input pins (M1 pins) and the number of fins for different transistors as
@@ -396,7 +393,6 @@ is DRC, LVS and PEX, which are the most critical elements of today's EDA flow.
 At the end of every design flow, you will be running DRC to make sure your design meets the
 foundry's manufacturing rules, LVS to ensure the layout matches your schematic intent, and PEX to 
 verify circuit behaviors with extracted layout parasitics.
-
 However, this is not the end of custom design flow story. If you want to incorporate these cells into
 VLSI tools and generate larger-scale designs, you may need better abstractions
 for the cells. Part 2 of this lab will explore Cadence Abstract Generator (for LEF) and Cadence
