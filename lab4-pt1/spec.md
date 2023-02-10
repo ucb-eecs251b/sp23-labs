@@ -360,12 +360,18 @@ used earlier for the decoder. We have included an example spice testbench at
 that the output of this flip flop is QN, not Q. Make sure to check the ordering
 of the ports of your DFF between the different netlists.
 
-TODO: add a paragraph
-
 ***Q7: Estimate the CLK-Q time of your DFF for both the exported CDL and
-the extracted netlist from xACT. Include a screenshot (or the text) of your
-spice/otherwise testbench. State the load capacitance and rise/fall times you
-used.***
+the extracted netlist from xACT. Run the provided testbench and solve this question.
+State the load capacitance and rise/fall times you used.***
+
+You can also extend the given testbench to characterize the setup time of your DFF.
+The measurement can be performed by varying the D-CLK time in the testbench. If you start
+with the data launch well before the clock rising edge, CLK-Q delay will only change
+slightly. However, as the data edge draws closer to the clock edge, CLK-Q delay will  
+exponentially until the data output can no longer be observed.
+In this lab, we will use the definition of setup time as the D-CLK delay at 1.05 times
+the CLK-Q delay. You will learn more about the setup time during the lecture.
+
 
 ***Q8: Estimate the setup time of your DFF for both the exported CDL and the
 extracted netlist from PEX. State the load capacitance and rise/fall times you
