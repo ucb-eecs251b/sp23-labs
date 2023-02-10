@@ -367,13 +367,11 @@ State the load capacitance and rise/fall times you used.***
 You can also extend the given testbench to characterize the setup time of your DFF.
 The measurement can be performed by varying the D-CLK time in the testbench. If you start
 with the data launch well before the clock rising edge, CLK-Q delay will only change
-slightly. However, as the data edge draws closer to the clock edge, CLK-Q delay will  
-exponentially until the data output can no longer be observed.
+slightly. However, as the data edge draws closer to the clock edge, CLK-Q delay will rapidly increase until the data output can no longer be observed.
 In this lab, we will use the definition of setup time as the D-CLK delay at 1.05 times
 the CLK-Q delay. You will learn more about the setup time during the lecture.
 
-
-***Q8: Estimate the setup time of your DFF for both the exported CDL and the
+***Q8: Modify `dff_testbench.sp` to estimate the setup time of your DFF for both the exported CDL and the
 extracted netlist from PEX. State the load capacitance and rise/fall times you
 used. Also, include a screenshot of the waveforms of CLK, D, and QN for the
 simulation that you determined the setup time from (if you're using HSPICE, you
