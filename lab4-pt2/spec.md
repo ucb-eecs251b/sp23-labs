@@ -14,20 +14,15 @@ College of Engineering, University of California, Berkeley
 </p>
 
 ## Overview
-In the previous lab, you used the digital design flow to place-and-route a
-design using a pre-existing library of standard cells based, then pushed it
-through DRC and LVS. In this lab, we will walk you through the basics of custom
-IC design. First, we will place-and-route a 4-16 decoder using the Hammer flow
-in Chipyard. We will then extract the design and simulate both the
-non-extracted and extracted netlist. With that, we can compare the timing and
-energy results between pre- and post-extraction.  
 
-Then, we will take a closer look at the ASAP7 standard cells we have been using 
-throughout the course and start a custom cell design in Cadence Virtuoso. You 
-will inspect a simple D flip-flop, run DRC to verify the layout is 
-manufacturable, and LVS to verify that your layout matches your schematic. 
-Then, you will run parasitic extraction on your design and run some basic 
-simulations to estimate some of its characteristics.
+In the previous labs, you used the digital design flow to place-and-route a 
+design using a pre-existing library of standard cells based, then pushed it 
+through DRC and LVS. In Part 1 of this lab, you learned how to extract the 
+custom digital design and simulate both the non-extracted and extracted netlist.
+With that, we can compare the timing and energy results between pre- and post extraction.
+Additionally, you learned how to inspect a simple D flip-flop schematic and layout, 
+run DRC to verify the layout's manufacturability, and run LVS to verify that your layout matches
+your schematic.
 
 The next task is to bridge the gap from designing the cells to abstracting them
 in a form that the VLSI flow tools can efficiently consume and process.  For
@@ -38,32 +33,6 @@ entire transistor-level layout, necessitating layout abstracts. We will see how
 to generate both types of abstractions, timing and physical, from a custom
 circuit.
 
-## Getting Started: Custom Design
-
-In this portion of the lab, we will be exploring custom cell design. Figure 1 
-gives an overview of the steps involved in the design flow for creating a 
-custom cell and integrating it into a VLSI flow. We will import an existing 
-design of a flip-flop in the ASAP7 PDK and introduce the steps you would take 
-while building a custom standard cell. We will examine its schematic, export a 
-netlist, run DRC and LVS, and simulate it.
-
-<p align="center">
- <img src="figs/custom-cell-design-flow.png" alt="custom_cell"/>
-    <br><em>Fig. 1 - Custom Cell Design Flow</em></br>
-</p>
-
-Start by running the following commands to setup and run Cadence Virtuoso 
-(recommended to run in the `lab4` directory to minimize file clutter).
-You should then see 2 windows, a command intepreter window (CIW) and a Library 
-Manager window, as shown in Figure 2.
-
-```
-cd lab4
-tcsh      # start C shell
-source ~eecs251b/sp23-workspace/asap7/asap7PDK_r1p7/cdslib/setup/setup_asap7.csh
-exit      # exit C shell
-virtuoso &
-```
 
 ## Characterization and Abstraction in the Custom Design Flow
 
@@ -226,7 +195,7 @@ well as a log a file. Open up the generated LIB to compare against the PDK's
 LIB, then answer these questions:
 
 ***Q3: Glance through the two LIBs and note any high-level differences between
-the characterization results of your flip-flop and the PDK's
+the characterization results of your flip-flop from Part 1 of this lab and the PDK's
 `DFFHQNx1_ASAP7_75t_R`.***
 
 ***Q4: Examine the setup and hold time tables. Given the constraint template,
@@ -470,7 +439,7 @@ change when generating the abstract?***
 the PDK's LEF it says `USE SIGNAL`. How did our abstract run know it's a clock
 pin, and what would we do differently to make it just a signal?***
 
-***Q12: `The `OBS` section contains our detailed obstructions. What would it look like
+***Q12: The `OBS` section contains our detailed obstructions. What would it look like
 if instead we did COVER for layer M2? Why would this pose problems for us in
 P&R? What about COVER for layer V1?***
 
