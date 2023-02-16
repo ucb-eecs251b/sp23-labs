@@ -56,7 +56,7 @@ non-digital blocks (such as analog IP) that need to be integrated into a design.
 <p align="center">
  <img src="figs/growing_libraries_lab4.png" alt="grow_libs"/>
     <br>
-    <em>Fig. 5 - Exponential Growth in Library Characterization</em>
+    <em>Fig. 1 - Exponential Growth in Library Characterization</em>
     </br>
 </p>
 
@@ -77,7 +77,7 @@ will only use Liberate Characterization to generate LIBs for our flip-flop.
 <p align="center">
  <img src="figs/complete_suite_lab4.png" alt="comp_suite"/>
     <br>
-    <em>Fig. 6 - The Complete Cadence Liberate Suite</em>
+    <em>Fig. 2 - The Complete Cadence Liberate Suite</em>
     </br>
 </p>
 
@@ -106,14 +106,14 @@ Finally, there are additional things to characterize: power, noise immunity, sig
 <p align="center">
  <img src="figs/ccs_lab4.png" alt="ccs"/>
     <br>
-    <em>Fig. 7 - Composite Current Source Model</em>
+    <em>Fig. 3 - Composite Current Source Model</em>
     </br>
 </p>
 
 <p align="center">
  <img src="figs/ecsm_lab4.png" alt="ecsm"/>
     <br>
-    <em>Fig. 8 - Effective Current Source Model</em>
+    <em>Fig. 4 - Effective Current Source Model</em>
     </br>
 </p>
 
@@ -254,13 +254,23 @@ Run the following command in the Virtuoso directory that we created earlier:
 abstract &
 ```
 
+When you open Abstract GUI, it should look like this:
+
+<p align="center">
+ <img src="figs/broken_abstract_lab4.png" alt="abs"/>
+    <br>
+    <em>Fig. 5 - Correctly Displayed Abstract</em>
+    </br>
+</p>
+
+
 Be advised that Abstract is quite an old tool, and may display like this in
 your X2Go session, where a lot of the menu text is invisible:
 
 <p align="center">
  <img src="figs/broken_abstract_lab4.png" alt="abs"/>
     <br>
-    <em>Fig. 9 - Incorrectly Displayed Abstract</em>
+    <em>Fig. 6 - Incorrectly Displayed Abstract</em>
     </br>
 </p>
 
@@ -271,7 +281,7 @@ Windows installer:
 <p align="center">
  <img src="figs/x2go_fonts_lab4.png" alt="fonts"/>
     <br>
-    <em>Fig. 10 - Selecting Legacy Fonts in X2Go Installer</em>
+    <em>Fig. 7 - Selecting Legacy Fonts in X2Go Installer</em>
     </br>
 </p>
 
