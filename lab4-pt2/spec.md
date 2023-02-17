@@ -198,10 +198,7 @@ LIB, then answer these questions:
 the characterization results of your flip-flop and the PDK's
 `DFFHQNx1_ASAP7_75t_R`.***
 
-***Q4: Examine the setup and hold time tables. Given the constraint template,
-explain why there are both positive and negative values.***
-
-***Q5: Repeat the characterization for the PVT corners that would be used for
+***Q4: Repeat the characterization for the PVT corners that would be used for
 setup and hold analysis (which corners are these, respectively?). Show some
 general comparisons of setup/hold timing and active/leakage power between these
 LIBs and the typical PVT corner LIB we generated first.***
@@ -415,18 +412,18 @@ generate an abstract. We are going to go through them from left to right:
    check your abstract against rules and various P&R tools. Cancel out of this
    step, as we will just move onto generating the LEF.
 
-***Q6: Why do we generally only want to generate pin shapes on metal layers,
+***Q5: Why do we generally only want to generate pin shapes on metal layers,
 and not layers such as n-well and p-substrate?***
 
-***Q7: Say we want to abstract an SRAM block with signal and power pins on M4 and
+***Q6: Say we want to abstract an SRAM block with signal and power pins on M4 and
 all internal routing on M4 and below. For which layers should we generate
 cover, shrink, and detailed blockages? Should we create boundary pins for
 signal and/or power nets?***
 
-***Q8: Why are there minimum and maximum density requirements for every layer
+***Q7: Why are there minimum and maximum density requirements for every layer
 in a technology stackup?***
 
-***Q9: Read the Overlap Tab section in the manual and explain the Overlap layer. 
+***Q8: Read the Overlap Tab section in the manual and explain the Overlap layer. 
 Provide a simple drawing of a case where creating an Overlap layer
 would be beneficial (Hint: During the placement optimization phase, P&R tools detect
 cell boundaries and their overlaps and penalize any overlaps).***
@@ -443,16 +440,16 @@ In the latter file, scroll down to the part that starts with
 provided in the PDK have been manually scaled up by 4x in order to get around
 needing extra sub-20nm Innovus licenses.
 
-***Q10: Minus the scaling factor, would the the abstract of the flip-flop we just
+***Q9: Minus the scaling factor, would the the abstract of the flip-flop we just
 generated fit properly in the `coreSite` site, which is 1.08um tall (4x scaled
 dimension)? If not, why (hint: look at the layout), and what would we need to
 change when generating the abstract?***
 
-***Q11: Notice how for the `CLK` pin it says `USE CLOCK` for our LEF while in
+***Q10: Notice how for the `CLK` pin it says `USE CLOCK` for our LEF while in
 the PDK's LEF it says `USE SIGNAL`. How did our abstract run know it's a clock
 pin, and what would we do differently to make it just a signal?***
 
-***Q12: The `OBS` section contains our detailed obstructions. What would it look like
+***Q11: The `OBS` section contains our detailed obstructions. What would it look like
 if instead we did COVER for layer M2? Why would this pose problems for us in
 P&R? What about COVER for layer V1?***
 
@@ -469,7 +466,7 @@ the Abstract user guide).
 Finally, in the Virtuoso library, for the `custom_dff_R` cell, there is now an
 `abstract` view. We can open this in the Virtuoso layout editor!
 
-***Q13: Submit a screenshot of the abstract view of the flip-flop, as viewed in
+***Q12: Submit a screenshot of the abstract view of the flip-flop, as viewed in
 Virtuoso.***
 
 ## Remaining Views
