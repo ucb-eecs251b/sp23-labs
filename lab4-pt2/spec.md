@@ -257,7 +257,7 @@ abstract &
 When you open Abstract GUI, it should look like this:
 
 <p align="center">
- <img src="figs/broken_abstract_lab4.png" alt="abs"/>
+ <img src="figs/abstract_lab4.png" alt="abs"/>
     <br>
     <em>Fig. 5 - Correctly Displayed Abstract</em>
     </br>
@@ -320,7 +320,7 @@ generate an abstract. We are going to go through them from left to right:
    - In the Map tab, under the field "Map text labels to pins", type
      `(M1 M1) (M2 M2) (M3 M3) (M4 M4) (M5 M5) (M6 M6) (M7 M7) (M8 M8)
      (M9 M9) (Pad Pad)`. This means that all pin labels on each layer
-     `M1` are mapped to shapes on the same layer. Leave the other fields
+     are mapped to shapes on the same layer. Leave the other fields
      as-is.
    - In the Text tab, do not change anything. However, this can be used if you
      want to use regex to change the pin names between the layout and abstract
@@ -426,8 +426,11 @@ signal and/or power nets?***
 ***Q8: Why are there minimum and maximum density requirements for every layer
 in a technology stackup?***
 
-***Q9: Provide a simple drawing of a case where creating an Overlap layer
-would be beneficial.***
+***Q9: Read the Overlap Tab section in the manual and explain the Overlap layer. 
+Provide a simple drawing of a case where creating an Overlap layer
+would be beneficial (Hint: During the placement optimization phase, P&R tools detect
+cell boundaries and their overlaps and penalize any overlaps).***
+
 
 Finally, we are ready to export the LEF. Go to `File` > `Export` > `LEF`. In
 the window that appears, set the LEF filename to `custom_dff_R.lef` (or
