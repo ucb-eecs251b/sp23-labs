@@ -195,7 +195,7 @@ well as a log a file. Open up the generated LIB to compare against the PDK's
 LIB, then answer these questions:
 
 ***Q3: Glance through the two LIBs and note any high-level differences between
-the characterization results of your flip-flop from Part 1 of this lab and the PDK's
+the characterization results of your flip-flop and the PDK's
 `DFFHQNx1_ASAP7_75t_R`.***
 
 ***Q4: Examine the setup and hold time tables. Given the constraint template,
