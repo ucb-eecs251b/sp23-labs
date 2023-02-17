@@ -85,7 +85,7 @@ will only use Liberate Characterization to generate LIBs for our flip-flop.
 
 Liberty Timing Files (LIBs) are an IEEE standard. A very high-level
 introduction of the key parameters and format of the standard is described
-[here](http://web.engr.uky.edu/~elias/lectures/LibertyFileIntroduction.pdf),
+[here](https://redirect.cs.umbc.edu/~cpatel2/links/641/slides/lect05_LIB.pdf)
 which corresponds to a basic timing model called the Non-Linear Delay Model
 (NLDM). It is a simple lookup table-based model which describes delays and
 rise/fall times for various input waveforms and output loads that results in
