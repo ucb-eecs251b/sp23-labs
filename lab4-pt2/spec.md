@@ -174,6 +174,8 @@ mean (summarizing from the reference manual):
   power consumption. Here, `index_1` is a range of input slews and `index_2` is
   a range of output loads.
 
+For more information about LIB syntax, you would find the [Liberty Reference Manual](https://people.eecs.berkeley.edu/~alanmi/publications/other/liberty07_03.pdf) useful.
+
 ***Q1: What is the benefit of specifying min/max transition times? Hint:
 think about signal integrity and crowbar currents.***
 
