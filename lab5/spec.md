@@ -264,4 +264,4 @@ the resulting delay, clock skew, jitter, and critical path. These are left for
 you to explore in your projects and/or future research.
 
 ## Acknowledgements
-This is an updated version of a Spring 21 EE241B Lab written by Harrison Liew. 
+Thank you to Erik Anderson for updating this lab for EECS251B. This is an updated version of a Spring 21 EE241B Lab written by Harrison Liew. 
