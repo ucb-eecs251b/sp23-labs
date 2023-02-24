@@ -447,9 +447,8 @@ generated fit properly in the `coreSite` site, which is 1.08um tall (4x scaled
 dimension)? If not, why (hint: look at the layout), and what would we need to
 change when generating the abstract?***
 
-***Q10: Notice how for the `CLK` pin it says `USE CLOCK` for our LEF while in
-the PDK's LEF it says `USE SIGNAL`. How did our abstract run know it's a clock
-pin, and what would we do differently to make it just a signal?***
+***Q10: Notice how for the `CLK` pin it says `USE CLOCK` for our LEF. How did 
+our abstract run know it's a clock pin, and what would we do differently to make it just a signal?***
 
 ***Q11: The `OBS` section contains our detailed obstructions. What would it look like
 if instead we did COVER for layer M2? Why would this pose problems for us in
