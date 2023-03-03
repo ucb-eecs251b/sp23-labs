@@ -208,7 +208,8 @@ attach the generated GIF image (`VDD_VSS.worst_eiv.gif`, not
 which lists all the instances and their voltages. Do these seem to correlate
 with the floorplan region you determined above? Can you make any determination
 as to whether the IR drop here may cause a degradation in our maximum
-achievable clock frequency in this corner?***
+achievable clock frequency in this corner? Effective Instance Voltage is an 
+effective operating voltage for each instance***
 
 ***Q11: Note that the DECAP cells in ASAP7 are not characterized
 at all. However, the standard cells have a limited but lower amount of
